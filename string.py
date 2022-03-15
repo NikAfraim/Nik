@@ -8,15 +8,18 @@ print(test)
 
 
 class Vehicle:
-    fuel: int = 'sds'
+    def __init__(self, fuel):
+        self.fuels: int = fuel
 
     def printout(self):
-        print(self.fuel)
+        print(self.fuels)
 
 
-car = Vehicle()
-car1 = Vehicle()
-Vehicle.fuel = 'hx'
-car.fuel = 300
-Vehicle.printout(car)
-Vehicle.printout(car1)
+car = Vehicle(100)
+car1 = Vehicle(200)
+
+car.fuel = 'sa'
+car1.fuel = 'sa'
+
+car.printout()
+car1.printout()
